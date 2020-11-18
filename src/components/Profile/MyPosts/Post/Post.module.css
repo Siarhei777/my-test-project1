@@ -1,0 +1,31 @@
+.align {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vmin 0;
+    border: 1px solid yellow;
+    padding: 1vmin;
+    width: 98%;
+}
+
+.colorText {
+    color: var(--text-color1);
+}
+
+.img2 {
+    width: 5vmin;
+    border-radius: 50%;
+}
+
+.textSpan {
+    color: var(--text-color3);
+    margin-left: 1vmin;
+}
+
+.button1 {
+    margin-left: 1vmin;
+}
+.button1:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+}
