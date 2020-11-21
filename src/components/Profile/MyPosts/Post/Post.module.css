@@ -2,30 +2,39 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1vmin 0;
-    border: 1px solid yellow;
+    margin: 1vmin 0 1vmin 3vmin;
     padding: 1vmin;
-    width: 98%;
+    width: 95%;
+    border-radius: 10px;
+    background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    box-shadow:
+    inset rgba(0,0,0,.6) 0 -3px 8px,
+    inset rgba(252,255,255,.7) 0 3px 8px,
+    rgba(0,0,0,.8) 0 3px 8px -3px;
 }
-
-.colorText {
-    color: var(--text-color1);
-}
-
 .img2 {
     width: 5vmin;
     border-radius: 50%;
 }
 
 .textSpan {
-    color: var(--text-color3);
+    color: white;
     margin-left: 1vmin;
 }
 
 .button1 {
+    outline: none !important;
     margin-left: 1vmin;
+    background-color: #01bafa;
+    color: gold;
+    border-radius: 5px;
 }
 .button1:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 1px black;
+}
+
+.like {
+    width: 3vmin;
+    height: 3vmin;
+    margin: 0 0 .5vmin .5vmin;
 }

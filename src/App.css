@@ -5,7 +5,9 @@
   --text-color3: blue;
 }
 
-.app-wrapper {
+.app_wrapper {
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-areas: 
   "h h"
@@ -13,4 +15,11 @@
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
+  background-image: url('assets/images/pic4.jpg');
+  background-size: 100% 100%;
+}
+
+.size_content {
+  grid-area: c;
+  background-color: rgba(255,255,255,.9);
 }

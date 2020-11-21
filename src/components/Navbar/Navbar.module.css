@@ -1,19 +1,26 @@
 .nav {
     grid-area: n;
-    background-color: var(--main-background-color);
+/*    background-color: var(--main-background-color);*/
+    background-color: #ffffff;
+    opacity: .9;
+    padding: 1vmin;
 }
   
-.links {    
+.links, a {
     text-decoration: none;
     display: block;
     font-size: calc(1rem + 1vw);
     padding: .5rem;
 }
 
-.colorText {
-    color: var(--text-color1);
+.activeLink {
+    color: gold;
 }
 
 .colorText2 {
-    color: var(--text-color2);
+    color: #5579f4;
+}
+
+a {
+    color: #5579f4;
 }

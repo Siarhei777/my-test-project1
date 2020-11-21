@@ -1,6 +1,7 @@
 .header {
   grid-area: h;
-  background-color: var(--main-background-color);
+  background-color: black;
+  opacity: 1;
 }
   
 .image1 {

@@ -1,0 +1,48 @@
+.container_image {
+    width: 100%;
+    height: 20vmin;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,1);
+    background-image: url('../../../assets/images/pic5.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.container_image .img1 {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.container_description {
+    width: 99%;
+    height: 10vmin;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: .5vmin;
+    font-size: calc(1rem + 1vmin);
+    color: gold;
+    margin: .5vmin auto 0;
+    border-radius: 10px;
+    background: rgba(100,100,100,1) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    box-shadow:
+    inset rgba(0,0,0,.6) 0 -3px 8px,
+    inset rgba(252,255,255,.7) 0 3px 8px,
+    rgba(0,0,0,.8) 0 3px 8px -3px;
+    opacity: 1;
+}
+.container_description .img2 {
+    width: 8vmin;
+    height: 8vmin;
+    margin-right: 1vmin;
+    border: calc(.1rem + .2vmin) black;
+    border-radius: 10%;
+}
+
+.container_description p {
+    display: inline-block;
+    width: 70%;
+}
