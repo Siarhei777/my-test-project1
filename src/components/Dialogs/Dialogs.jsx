@@ -5,8 +5,13 @@ import Message from './Message/Message';
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.dialogs.map(dialog => <DialogItem name = {dialog.name} id = {dialog.id} />);
-    let messagesElements = props.messages.map(message => <Message message = {message.message} />);
+    let dialogsElements = props.dialogs.map(dialog => <DialogItem name = {dialog.name} id = {dialog.id} avatar = {dialog.avatar}/>);
+    let messagesElements = props.messages.map( message => {
+
+        let classMargin = (message.id) ? 'classNotMargin': 'classMargin';
+
+        return (<Message id = {message.id} message = {message.message} margin = {classMargin} avatar = {message.avatar}/>)
+    });
 
     return (
         <div className = {`${style.content} size_content`}>

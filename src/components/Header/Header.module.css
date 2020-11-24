@@ -1,12 +1,30 @@
 .header {
   grid-area: h;
-  background-color: black;
-  opacity: 1;
+  width: 98.7%;
+  background-color: rgba(255,255,255,.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: .4vmin solid gold;
+  border-radius: 1vmin;
 }
   
-.image1 {
-  height: 100%;  
-  width: auto;
+.image1, .image2 {
+  height: 6.4vmin;
+  width: 6.4vmin;
   margin-left: 1vmin;
   border-radius: 50%;
+  border: .3vmin solid gold;
+}
+
+.image2 {
+  margin: 0 1vmin 0 0;
+}
+
+.header h1 {
+  color: gold;
+  text-shadow: 2px 2px 1px black;
+  font-size: calc(2.5rem + 1vmin);
+  margin: 0 0 1vmin 0;
+  font-weight: bold;
 }

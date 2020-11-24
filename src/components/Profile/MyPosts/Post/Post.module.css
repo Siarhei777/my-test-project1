@@ -2,15 +2,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    max-width: 95%;
     margin: 1vmin 0 1vmin 3vmin;
     padding: 1vmin;
-    width: 95%;
     border-radius: 10px;
-    background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+/*    background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
     box-shadow:
     inset rgba(0,0,0,.6) 0 -3px 8px,
     inset rgba(252,255,255,.7) 0 3px 8px,
-    rgba(0,0,0,.8) 0 3px 8px -3px;
+    rgba(0,0,0,.8) 0 3px 8px -3px;*/
+    background-color: #0074d9;
 }
 .img2 {
     width: 5vmin;
@@ -20,17 +21,35 @@
 .textSpan {
     color: white;
     margin-left: 1vmin;
+    max-width: 86%;
+    text-align: justify;
 }
 
 .button1 {
     outline: none !important;
     margin-left: 1vmin;
-    background-color: #01bafa;
-    color: gold;
-    border-radius: 5px;
+    background-color: #07d701;
+    color: white;
+    border: none;
+    border-radius: .7vmin;
+    height: 3vmin;
+    width: 7vmin;
+    font-size: calc(.4rem + .5vmin);
+    transition: ease 0.15s all;
+    animation: none;
 }
 .button1:hover {
     cursor: pointer;
+    color: gold;
+}
+
+.button1:active {
+    outline: none !important;
+    cursor: pointer;
+    height: 2.8vmin;
+    width: 6.8vmin;
+    box-shadow: .1vmin .1vmin .5vmin .1vmin black;
+    margin-right: .2vmin;
 }
 
 .like {

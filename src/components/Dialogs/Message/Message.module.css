@@ -1,0 +1,7 @@
+.message_img {
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    border: .3vmin solid gold;
+    margin-right: 1vmin;
+}

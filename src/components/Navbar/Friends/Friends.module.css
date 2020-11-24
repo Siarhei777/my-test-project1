@@ -1,0 +1,20 @@
+.friends {
+    width: 100%;
+    height: auto;
+    margin-top: 5vmin;
+}
+
+.friends span {
+    display: block;
+    font-size: calc(2rem + 1vw);
+    color: #5579f4;
+    padding: .5rem;
+    text-align: center;
+}
+
+.everyFriend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}

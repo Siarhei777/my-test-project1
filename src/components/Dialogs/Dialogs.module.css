@@ -1,7 +1,19 @@
 .content {
-    background-color: white;
+    background-color: rgba(255,255,255,.95);
     display: grid;
     grid-template-columns: 2fr 10fr;
+    min-height: calc(99vh - 11vmin);
     font-size: calc(1rem + 1vmin);
-    opacity: .9;
+}
+
+.dialog_items {
+    border-right: .5vmin solid gold;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vmin;
 }

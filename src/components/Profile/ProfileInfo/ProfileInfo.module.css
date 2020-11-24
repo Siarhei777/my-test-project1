@@ -3,21 +3,22 @@
     height: 20vmin;
     margin: 0 auto;
     background-color: rgba(255,255,255,1);
-    background-image: url('../../../assets/images/pic5.jpg');
-    background-size: 100% auto;
+    background-image: url('../../../assets/images/84.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
+    border-bottom: .4vmin solid gold;
 }
 
 .container_image .img1 {
-    width: 100%;
+    width: 98%;
     height: auto;
     opacity: 1;
     overflow: hidden;
 }
 
 .container_description {
-    width: 99%;
+    width: 98%;
     height: 10vmin;
     display: flex;
     justify-content: flex-start;

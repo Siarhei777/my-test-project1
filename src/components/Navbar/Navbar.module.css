@@ -2,8 +2,12 @@
     grid-area: n;
 /*    background-color: var(--main-background-color);*/
     background-color: #ffffff;
-    opacity: .9;
+    opacity: .95;
     padding: 1vmin;
+    min-height: calc(99vh - 11vmin);
+    height: auto;
+    border: .4vmin solid gold;
+    border-radius: 1vmin;
 }
   
 .links, a {
@@ -13,8 +17,12 @@
     padding: .5rem;
 }
 
+.links, a:hover:not(.activeLink) {
+    text-shadow: 1px 1px 10px black;
+}
 .activeLink {
     color: gold;
+    text-shadow: none;
 }
 
 .colorText2 {

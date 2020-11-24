@@ -11,11 +11,13 @@ const MyPosts = (props) => {
         <div className = {style.block_post}>
             <p>My post</p>
             <textarea></textarea>
-            <button>Add post</button>
+            <div className = {style.button_container}>
+                <button>Add post</button>
+            </div>
         </div>
-
-        { postsElemets }
-
+        <div className = {style.container_post}>
+            { postsElemets }
+        </div>
       </div>  
     );
 }

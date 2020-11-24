@@ -1,5 +1,5 @@
 .mypost_size {
-    width: 100%;
+    width: 97%;
 }
 .block_post {
     width: 30%;
@@ -20,28 +20,58 @@
 .block_post p {
     font-size: calc(.7rem + 1vmin);
     color: gold;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .block_post textarea {
     outline: none !important;
     width: 96%;
-    height: 12vmin;
+    height: 11.5vmin;
     resize: none;
     font-size: calc(.5rem + 1vmin);
+}
+
+.block_post .button_container {
+    width: 9vmin;
+    height: 4vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .block_post button {
     outline: none !important;
     display: block;
-    width:20%;
-    height: 20%;
-    background-color: red;
+    width: 8.8vmin;
+    height: 3.8vmin;
+    background-color: #5579f4;;
     font-size: calc(.5rem + .7vmin);
-    color: gold;
+    color: white;
+    border: .1vmin solid #ababab;
     border-radius: 1vmin;
+
+    transition: ease 0.15s all;
+    animation: none;
 }
 
 .block_post button:hover {
     cursor: pointer;
+    color: gold;
+}
+
+.block_post button:active {
+    cursor: pointer;
+    width: 8.6vmin;
+    height: 3.6vmin;
+    font-size: calc(.5rem + .7vmin);
+    color: gold;
+    border: .1vmin solid white;
+}
+
+.container_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
 }

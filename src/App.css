@@ -3,23 +3,67 @@
   --text-color1: #f3f3f3;
   --text-color2: red;
   --text-color3: blue;
+  user-select: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .app_wrapper {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template-areas: 
   "h h"
   "n c";
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 8vmin 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+  grid-gap: 1vmin;
   background-image: url('assets/images/pic4.jpg');
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
+  background-repeat: repeat;
 }
 
 .size_content {
   grid-area: c;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.95);
+  width: 98.4%;
+  min-height: calc(99vh - 11vmin);
+  border: .4vmin solid gold;
+  border-radius: 1vmin;
+}
+
+.classMargin, .classNotMargin {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1vmin;
+  margin: 1vmin 0;
+  max-width: 70%;
+}
+
+.classMargin span, .classNotMargin span {
+  outline: none !important;
+  border-radius: 2vmin;
+  padding: 1vmin;
+  font-size: calc(.5rem + .8vmin);
+  text-align: justify;
+  text-shadow: 1px 1px 1px black;
+  user-select: text;
+}
+
+.classMargin {
+  align-self: flex-start;
+}
+.classMargin span {
+  background-color: #646464;
+  color: white;
+}
+
+.classNotMargin {
+  align-self: flex-end;
+}
+
+.classNotMargin span {
+  background-color: #0074d9;
+  color: white;
 }

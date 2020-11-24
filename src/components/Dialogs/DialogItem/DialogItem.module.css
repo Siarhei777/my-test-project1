@@ -1,3 +1,26 @@
-.active {
+.dialogItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vmin;
+}
+
+.dialogItem a {
+    font-size: calc(.7rem + 1vmin);
+}
+
+.dialogItem a:hover:not(.active) {
+    text-shadow: 1px 1px 10px black;
+}
+
+.dialogItem .active {
     color: gold;
+    text-shadow: none !important;
+}
+
+.dialogItem img {
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    border: .3vmin solid gold;
 }
