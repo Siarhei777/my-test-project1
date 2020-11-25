@@ -9,6 +9,8 @@ import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from "react-router-dom";
 
+
+
 const App = (props) => {
 
   return (
@@ -16,8 +18,14 @@ const App = (props) => {
       <div className="app_wrapper">
         <Header />
         <Navbar friends = {props.state.sidebarPage}/>
-        <Route path='/Dialogs' render = { () => <Dialogs messages = {props.state.messagesPage.messages} dialogs = {props.state.messagesPage.dialogs} />} />
-        <Route path='/Profile' render = { () => <Profile posts = {props.state.profilePage.posts}/>} />
+        <Route path='/Dialogs' render = { () => <Dialogs messages = {props.state.messagesPage.messages}
+                                                         addMyPost = {props.addMyPost} 
+                                                         updateNewMyPostText = {props.updateNewMyPostText}
+                                                         newMyPostText = {props.state.messagesPage.newMyPostText}
+                                                         dialogs = {props.state.messagesPage.dialogs} />} />
+        <Route path='/Profile' render = { () => <Profile profilePage = {props.state.profilePage}
+                                                         addPost = {props.addPost}
+                                                         updateNewPostText = {props.updateNewPostText}/>} />
         <Route path='/News' component = {News} />
         <Route path='/Music' component = {Music} />
         <Route path='/Settings' component = {Settings} />

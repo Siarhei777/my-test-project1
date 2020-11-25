@@ -7,7 +7,7 @@ const EveryFriend = (props) => {
 
     return (
         <div className = {style.friend_container}>
-            <img src = {`${pathImage}${props.pict}`} />
+            <img src = {`${pathImage}${props.pict}`} alt="Аватар"/>
             <span>{props.name}</span>
         </div>
     );
